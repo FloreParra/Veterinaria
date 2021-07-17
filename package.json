@@ -1,0 +1,25 @@
+{
+  "name": "veterinaria",
+  "version": "1.0.0",
+  "description": "vet and pet shop",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FloreParra/veterinaria.git"
+  },
+  "author": "Flore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FloreParra/veterinaria/issues"
+  },
+  "homepage": "https://github.com/FloreParra/veterinaria#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

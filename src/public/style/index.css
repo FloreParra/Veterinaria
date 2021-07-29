@@ -8,11 +8,23 @@ color navegacion #ffef96
 }
 
 .title {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   color: #622569;
 }
 
-.silder img {
+.main {
+  font-size: 50px;
+}
+
+.nav-content {
+  background-color: #ffef96;
+}
+
+.silder .img {
   width: 100%;
+}
+
+.about .image {
+  width: 25%;
 }

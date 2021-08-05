@@ -9,4 +9,14 @@ router.get("/", (req, res) => {
   res.sendFile(ruta);
 });
 
+router.get("/productos", (req, res) => {
+  let ruta = path.resolve(__dirname, "../src/views/main/products.html");
+  res.sendFile(ruta);
+});
+
+router.get("/register", (req, res) => {
+  let ruta = path.resolve(__dirname, "../src/views/main/register.html");
+  res.sendFile(ruta);
+});
+
 module.exports = router;

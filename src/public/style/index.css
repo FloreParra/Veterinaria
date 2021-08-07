@@ -23,6 +23,16 @@ color navegacion #ffef96
   display: none;
 }
 
+.button {
+  background-color: #622569;
+  color: white;
+  border-radius: 25%;
+}
+
+.foot-content {
+  background-color: #622569;
+}
+
 .slider .one {
   width: 100%;
 }
@@ -40,13 +50,44 @@ color navegacion #ffef96
 .about .image {
   width: 45%;
   float: left;
+  margin-right: 10px;
 }
 
 .product {
   border: black solid 1px;
   text-align: center;
+  margin: 10%;
 }
 
 .product .image {
   width: 60%;
+}
+
+.price {
+  font-weight: 800;
+  color: #622569;
+}
+
+.product .button {
+  margin-bottom: 15px;
+}
+
+.product-link {
+  text-align: center;
+  background-color: rgba(0, 102, 102, 0.3);
+  padding: 10px;
+  margin: 15px;
+}
+.product-link .image {
+  width: 80%;
+}
+
+.product-link .content .text {
+  color: white;
+  background-color: rgba(0, 102, 102, 0.3);
+}
+
+.product-link .button {
+  padding: 15px;
+  font-size: 16px;
 }

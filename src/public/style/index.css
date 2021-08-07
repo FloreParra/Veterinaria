@@ -17,14 +17,36 @@ color navegacion #ffef96
   font-size: 50px;
 }
 
-.nav-content {
+.nav-content,
+.nav-content ul {
   background-color: #ffef96;
+  display: none;
 }
 
-.silder .img {
+.slider .one {
   width: 100%;
 }
 
+.slider .img .two,
+.slider .img .three {
+  display: none;
+}
+
+.cat {
+  float: right;
+  width: 45%;
+}
+
 .about .image {
-  width: 25%;
+  width: 45%;
+  float: left;
+}
+
+.product {
+  border: black solid 1px;
+  text-align: center;
+}
+
+.product .image {
+  width: 60%;
 }

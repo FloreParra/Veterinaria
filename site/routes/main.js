@@ -1,22 +1,14 @@
 const express = require("express");
 const path = require("path");
 const router = express.Router();
+const controllerMain = require("../controller/main");
 
 // RUTAS
 
-router.get("/", (req, res) => {
-  let ruta = path.resolve(__dirname, "../src/views/main/index.html");
-  res.sendFile(ruta);
-});
+router.get("/", controllerMain.main);
 
-router.get("/productos", (req, res) => {
-  let ruta = path.resolve(__dirname, "../src/views/main/products.html");
-  res.sendFile(ruta);
-});
+router.get("/productos", controllerMain.productView);
 
-router.get("/register", (req, res) => {
-  let ruta = path.resolve(__dirname, "../src/views/main/register.html");
-  res.sendFile(ruta);
-});
+router.get("/register", controllerMain.registerView);
 
 module.exports = router;

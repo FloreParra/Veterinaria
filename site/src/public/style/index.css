@@ -20,7 +20,7 @@ color navegacion #ffef96
 .nav-content,
 .nav-content ul {
   background-color: #ffef96;
-  display: none;
+  /* display: none; */
 }
 
 .button {

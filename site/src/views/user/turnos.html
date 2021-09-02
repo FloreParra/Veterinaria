@@ -13,11 +13,17 @@
         <form action="hc" method="post">
             <div class="container">
                 <label for="mascota" class="label">Nombre de la mascota</label>
-                <input type="range" name="mascota" id="mascota" class="input">
+                <select name="mascota" id="mascota" class="input">
+                    <option value="mascota">Michi</option>
+                    <option value="mascota">Puchi</option>
+                </select>
             </div>
             <div class="container">
                 <label for="vete" class="label">Nombre del veterinario </label>
-                <input type="range" name="vete" id="vete" class="input">
+                <select name="vete" id="vete" class="input">
+                    <option value="pepe">Pepe</option>
+                    <option value="claudio">Claudio</option>
+                </select>
             </div>
             <div class="container">
                 <label for="date" class="label">Fecha</label>
@@ -25,7 +31,12 @@
             </div>
             <div class="container">
                 <label for="time" class="label">Hora</label>
-                <input type="range" name="time" id="time" class="input">
+                <select name="time" id="time" class="input">
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
             </div>
         </form>
     </main>

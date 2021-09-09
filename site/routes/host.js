@@ -1,9 +1,9 @@
 const express = require("express");
-const { Router } = express;
+const router = express.Router();
 const controllerHost = require("../controller/host");
 
-Router.get("/addProduct", controllerHost.addProduct);
-Router.get("/hc", controllerHost.hc);
-Router.get("/modProduct", controllerHost.modProduct);
+router.get("/addProduct", controllerHost.addProduct);
+router.get("/hc", controllerHost.hc);
+router.get("/modProduct", controllerHost.modProduct);
 
-module.exports = Router;
+module.exports = router;

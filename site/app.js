@@ -13,4 +13,6 @@ app.use(express.static(path.resolve(__dirname, "./src/public")));
 
 // RUTAS
 const mainRoutes = require("./routes/main");
+const hostRoutes = require("./routes/host");
 app.use("/", mainRoutes);
+app.use("/host", hostRoutes);

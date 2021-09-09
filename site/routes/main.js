@@ -7,7 +7,7 @@ const controllerMain = require("../controller/main");
 
 router.get("/", controllerMain.main);
 
-router.get("/productos", controllerMain.productView);
+router.get("/products", controllerMain.productView);
 
 router.get("/register", controllerMain.registerView);
 

@@ -7,3 +7,5 @@ router.get("/lonIn", userController.login);
 router.get("/profile", userController.profile);
 router.get("/modifyProfile", userController.modProfile);
 router.get("/turnos", userController.turno);
+
+module.exports = router;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head.ejs") %>
+
+    <body>
+        <main>
+            <form action="profile" method="post">
+                <label for="name" class="label">Nombre de Usuario</label>
+                <input type="text" class="input" id="name" value="Pepe">
+                </div>
+                <div class="info-content">
+                    <label for="email" class="label">Mail</label>
+                    <input type="email" class="input" id="email" value="pepe123@hola.com">
+                </div>
+                <div class="info-content">
+                    <label for="pass" class="label">Password</label>
+                    <input type="password" class="input" id="pass" value="*******">
+                </div>
+                <div class="info-content">
+                    <label for="address" class="label">Dirección</label>
+                    <input type="text" class="input" id="address" value="Calle falsa 123">
+                </div>
+                <div class="info-content">
+                    <label for="tel" class="label">Teléfono</label>
+                    <input type="text" class="input" id="tel" value="12489340">
+                </div>
+            </form>
+        </main>
+        <%- include(../partials/footer.ejs) %>
+    </body>
+
+</html>

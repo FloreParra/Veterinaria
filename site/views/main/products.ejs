@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<%- include("../partials/head.ejs") %>
 
-<body>
-    <main>
-        <div class="category">
-            <h3 class="subtitulo">Categorías</h3>
-            <form action="products" method="POST">
-                <label for="perro" class="label">Perros</label>
-                <input type="checkbox" name="perro" id="perro" class="input">
-                <label for="gato" class="label">Gatos</label>
-                <input type="checkbox" name="gato" id="gato" class="input">
-                <label for="food" class="label">Alimento</label>
-                <input type="checkbox" name="food" id="food" class="input">
-                <label for="accessory" class="label">Accesorios</label>
-                <input type="checkbox" name="accessory" id="accessory" class="input">
-            </form>
-        </div>
-        <div class="container">
-            <div class="card">
-                <img src="../img/paseo.jpg" alt="product" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Combo paseo</p>
-                    <p class="card-text price">$800</p>
-                    <button class="btn btn-outline-success">Ver</button>
+    <body>
+        <main>
+            <div class="category">
+                <h3 class="subtitulo">Categorías</h3>
+                <form action="products" method="POST">
+                    <label for="perro" class="label">Perros</label>
+                    <input type="checkbox" name="perro" id="perro" class="input">
+                    <label for="gato" class="label">Gatos</label>
+                    <input type="checkbox" name="gato" id="gato" class="input">
+                    <label for="food" class="label">Alimento</label>
+                    <input type="checkbox" name="food" id="food" class="input">
+                    <label for="accessory" class="label">Accesorios</label>
+                    <input type="checkbox" name="accessory" id="accessory" class="input">
+                </form>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="../img/paseo.jpg" alt="product" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Combo paseo</p>
+                        <p class="card-text price">$800</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/paseo.jpg" alt="product" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Combo paseo</p>
+                        <p class="card-text price">$800</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/paseo.jpg" alt="product" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Combo paseo</p>
+                        <p class="card-text price">$800</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/paseo.jpg" alt="product" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Combo paseo</p>
+                        <p class="card-text price">$800</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../img/paseo.jpg" alt="product" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Combo paseo</p>
-                    <p class="card-text price">$800</p>
-                    <button class="btn btn-outline-success">Ver</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../img/paseo.jpg" alt="product" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Combo paseo</p>
-                    <p class="card-text price">$800</p>
-                    <button class="btn btn-outline-success">Ver</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../img/paseo.jpg" alt="product" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Combo paseo</p>
-                    <p class="card-text price">$800</p>
-                    <button class="btn btn-outline-success">Ver</button>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+        </main>
+        <%- include("../partials/footer.ejs") %>
+    </body>
 
 </html>

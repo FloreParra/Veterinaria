@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Pepe</title>
-</head>
+<%- include("../partials/head.ejs")%>
 
-<body>
-    <main>
-        <form action="/veterinaria/src/views/user/profile.html" method="post" class="form-content">
-            <div class="row mb-3">
-                <label for="name" class="col-sm-2 col-form-label">Nombre de Usuario</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <label for="email" class="col-sm-2 col-form-label">Mail</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <label for="pass" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="pass">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <label for="address" class="label">Dirección</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="address">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <label for="tel" class="col-sm-2 col-form-label">Teléfono</label>
-                <div class=" col-sm-10">
-                    <input type="text" class="form-control" id="tel">
-                </div>
-            </div>
-            <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Categoría</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="category" id="owner" value="option1">
-                        <label class="form-check-label" for="owner">
-                            Dueño/usuario
-                        </label>
+    <body>
+        <main>
+            <form action="/veterinaria/src/views/user/profile.html" method="post" class="form-content">
+                <div class="row mb-3">
+                    <label for="name" class="col-sm-2 col-form-label">Nombre de Usuario</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name">
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="category" id="veterinary" value="option2">
-                        <label class="form-check-label" for="veterinary">
-                            Veterinario
-                        </label>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Mail</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email">
                     </div>
-                    <button class="btn btn-outline-success">Registrarme</button>
-        </form>
-    </main>
-</body>
+                </div>
+                <div class="row mb-3">
+                    <label for="pass" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pass">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="address" class="label">Dirección</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="tel" class="col-sm-2 col-form-label">Teléfono</label>
+                    <div class=" col-sm-10">
+                        <input type="text" class="form-control" id="tel">
+                    </div>
+                </div>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Categoría</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="category" id="owner" value="option1">
+                            <label class="form-check-label" for="owner">
+                                Dueño/usuario
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="category" id="veterinary"
+                                value="option2">
+                            <label class="form-check-label" for="veterinary">
+                                Veterinario
+                            </label>
+                        </div>
+                        <button class="btn btn-outline-success">Registrarme</button>
+            </form>
+        </main>
+        <%- include("../partials/footer.ejs") %>
+    </body>
 
 </html>

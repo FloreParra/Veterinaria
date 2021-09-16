@@ -3,24 +3,19 @@ const path = require("path");
 
 const hostControler = {
   addProduct: (req, res) => {
-    let ruta = path.resolve(__dirname, "../src/views/host/addProduct.html");
-    res.sendFile(ruta);
+    res.render("host/addProduct");
   },
   hc: (req, res) => {
-    let ruta = path.resolve(__dirname, "../src/views/host/hc.html");
-    res.sendFile(ruta);
+    res.render("host/hc");
   },
   modProduct: (req, res) => {
-    let ruta = path.resolve(__dirname, "../src/views/host/modProducts.html");
-    res.sendFile(ruta);
+    res.render("host/modProducts");
   },
   newentry: (req, res) => {
-    let ruta = path.resolve(__dirname, "../scr/views/host/newEntry.html");
-    res.sendFile(ruta);
+    res.render("host/newEntry");
   },
   paciente: (req, res) => {
-    let ruta = path.resolve(__dirname, "../src/views/host/paciente.html");
-    res.sendFile(ryta);
+    res.render("host/paciente");
   },
 };
 

@@ -5,14 +5,14 @@ const path = require("path");
 // Functions
 const app = express();
 
+// Uso de engine
+app.set("view engine", "ejs");
+
 // Puerto
 app.listen(3001, () => console.log("puerto funcionando 3001"));
 
 // Archivos estáticos
 app.use(express.static(path.resolve(__dirname, "./src/public")));
-
-// Uso de engine
-app.set("view engine", "ejs");
 
 // RUTAS
 const mainRoutes = require("./routes/main");

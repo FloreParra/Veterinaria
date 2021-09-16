@@ -2,8 +2,8 @@ const path = require("path");
 
 const mainController = {
   main: (req, res) => {
-    let ruta = path.resolve(__dirname, "../src/views/main/index.html");
-    res.sendFile(ruta);
+    let ruta = path.resolve(__dirname, "../src/views/main/index.ejs");
+    res.render("main/index");
   },
   productView: (req, res) => {
     let ruta = path.resolve(__dirname, "../src/views/main/products.html");

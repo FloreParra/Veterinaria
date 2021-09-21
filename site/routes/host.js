@@ -4,6 +4,7 @@ const controllerHost = require("../controller/host");
 const { route } = require("./user");
 
 router.get("/addProduct", controllerHost.addProduct);
+router.post("/addProduct", controllerHost.createProduct);
 router.get("/hc", controllerHost.hc);
 router.get("/modProduct", controllerHost.modProduct);
 router.get("/:id?/paciente", controllerHost.paciente);

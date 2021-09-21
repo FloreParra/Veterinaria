@@ -6,14 +6,9 @@ const hostControler = {
     res.render("host/addProduct");
   },
   createProduct: (req, res) => {
-    let datos = {
-      name: req.params.name,
-      picture: req.params.picture,
-      price: req.params.price,
-      description: req.params.description,
-    };
+    let datos = { ...req.body };
     console.log(datos);
-    res.redirect("main/products");
+    res.redirect("/main/products");
   },
   hc: (req, res) => {
     res.render("host/hc");
